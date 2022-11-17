@@ -1,0 +1,528 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Описание обложки*/
+.selection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.trrr {
+    flex: 1 0 auto;
+    margin-bottom: 75px;
+
+}
+
+.contener {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+/*Шапака нав./лого*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 45px 0;
+    align-items: center;
+
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header__menu li {
+    list-style: none;
+    margin: 0px 0px 0px 36px;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.active,
+.menu__item:hover {
+    color: #d45e5e;
+    border-top: 2px solid red;
+    padding: 10px 10px;
+    transform: scaleY(0.7);
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+}
+
+.logo h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.logo h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+
+
+}
+
+.logo strong {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*Контент банер/реклама*/
+.baner {
+    padding: 15px 10px;
+}
+
+.baner h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+    height: 90px;
+    font-size: 101px;
+    color: #d5d5d5;
+    font-family: Arial, sans-serif;
+}
+
+.baner p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #404040;
+
+}
+
+/*Стилист. контента*/
+.df {
+    position: relative;
+}
+
+
+.cart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+
+}
+
+.cart img {
+    width: 50px;
+    height: 70px;
+    margin: 10px 0;
+
+}
+
+.sy hr {
+    border: none;
+}
+
+
+.sy::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 2px 0 0 rgba(217, 217, 217);
+    border-bottom-width: 1px;
+    /* Толщина линии внизу */
+    border-bottom-style: solid;
+    /* Стиль линии внизу */
+    border-bottom-color: rgba(217, 217, 217);
+    /* Цвет линии внизу */
+}
+
+.name {
+    display: flex;
+    padding: 0 15px;
+}
+
+.name p {
+    font-size: 20px;
+    padding: 20px 40px;
+    font-family: Cambria, sans-serif;
+    font-style: italic;
+}
+
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.list {
+    min-width: 340px;
+    max-width: 100%;
+}
+
+.list img {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+/*Стилиз подвала*/
+.futer {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: #d45e5e;
+    position: relative;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.lname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
+    width: 360px;
+}
+
+.fg {
+    display: block;
+    width: 320px;
+    padding-bottom: 45px;
+}
+
+.fg p {
+    font-family: Cambria, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+
+}
+
+.fg strong {
+    display: flex;
+    padding: 2px;
+    font-weight: 300;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+
+}
+
+.fg img {
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.kartina {
+    display: flex;
+    width: 130px;
+    height: 150px;
+
+}
+
+.kartina img {
+    position: absolute;
+    top: -65px;
+    left: 380px;
+    width: 150px;
+    height: 150px;
+    border: 8px solid white;
+
+}
+
+
+.socet img {
+    padding: 0 15px;
+}
+
+.ret p {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    /*    padding-top: 10px;*/
+    margin: 5px 0;
+
+}
+
+.dss1 {
+    width: 100%;
+    background-color: #ddd;
+
+
+}
+
+.retig {
+    width: 20%;
+    margin-top: 25px;
+}
+
+.retig h1 {
+    color: white;
+    font-size: 25px;
+    font-family: Cambria, sans-serif;
+}
+
+
+.Ps {
+    width: 56%;
+    background-color: black;
+    height: 12px;
+
+}
+
+.Ai {
+    width: 78%;
+    background-color: black;
+    height: 12px;
+
+}
+
+.Bs {
+    width: 30%;
+    background-color: black;
+    height: 12px;
+
+}
+
+.Cs {
+    width: 90%;
+    background-color: black;
+    height: 12px;
+
+}
+
+.lor {
+    display: flex;
+    width: 48%;
+    text-align: justify;
+    /*    border: 2px solid red;*/
+    margin: 0 150px;
+}
+
+.lor p {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+/*Адаптив моб.*/
+
+@media(max-width: 767px) {
+    .header__nav {
+        display: block;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        background: #d45e5e;
+        box-shadow: #ccc;
+        width: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        left: -100%;
+        z-index: 4;
+
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .header__nav.open-menu {
+        left: 0;
+    }
+
+    .header__menu li {
+        margin: 40px 0px 40px 33px;
+        font-size: 14px;
+    }
+
+    .menu-burger__header {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+    }
+
+    .menu-burger__header span,
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+
+    }
+
+    .menu-burger__header span {
+        top: 16px;
+    }
+
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        content: '';
+    }
+
+    .menu-burger__header:after {
+        bottom: 5px;
+    }
+
+    .menu-burger__header:before {
+        top: 5px;
+    }
+
+    .menu-burger__header.open-menu span {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .menu-burger__header.open-menu:before {
+        transform: rotate(38deg);
+        top: 16px;
+        transition: 0.4s;
+    }
+
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 16px;
+        transition: 0.4s;
+    }
+
+    header {
+        height: 20px;
+    }
+
+    .content-wrapper {
+        margin-top: 48px;
+    }
+
+    .fixed-pade {
+        overflow: hidden;
+    }
+
+    .active,
+    .menu__item:hover {
+        color: white;
+        border-top: 2px solid red;
+        padding: 10px 10px;
+        transform: scaleY(0.7);
+        -webkit-transform: scaleY(0.7);
+        -moz-transform: scaleY(0.7);
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+
+    }
+
+    .kartina img {
+        top: -55px;
+        left: 110px;
+        width: 125px;
+        height: 125px;
+        border: 8px solid white;
+    }
+
+
+    .lname {
+        margin-left: 120px;
+        width: 260px;
+    }
+
+
+    .socet {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socet img {
+        /*        width: 80px;*/
+        padding-bottom: 45px;
+
+    }
+
+    .retig {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+
+    .lor {
+        display: flex;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .lor p {
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        padding: 10px 0;
+    }
+}
